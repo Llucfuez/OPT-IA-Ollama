@@ -82,13 +82,50 @@ _Enganxeu aquí el prompt que heu donat al model per generar `lab.py`._
 
 Deseu l'script `lab.py` a l'arrel del repositori (no en aquesta carpeta).
 
+Necesito que hem creis un script de python, aixo es el que ha de fer:  El fitxer es diu `lab.py` i es crida així:
+... 
+...      ```powershell
+...      python lab.py "prompt" --vegades 5 --temperature 0.8
+...      ```
+... 
+...    - El prompt és obligatori (text). Si no s'indiquen, `--vegades` (enter) val 5 i `--temperature` (decimal) val 1.
+...    - Les opcions s'escriuen amb nom (`--vegades`, `--temperature`) i en qualsevol ordre. Així, més endavant, hi podrem afegir més opcions s
+... ense trencar res.
+...    - Si s'executa sense cap argument, no ha de fallar amb un error: ha de mostrar l'ajuda (l'ús i les opcions) i sortir.
+...    - Fa servir el model `gemma3:4b`.
+...    - Repeteix el prompt les vegades indicades amb crides independents (sense historial, així no cal `/clear`).
+...    - Primer imprimeix les opcions que fa servir i, després, cada resposta numerada.
+... 
+...    **Com demanar-ho al model:**
+... 
+...    - Digueu-li que faci servir `argparse`.
+...    - Doneu-li un exemple de sortida, perquè així el format surt igual cada cop:
+... 
+...      ```
+...      Prompt: Digues una paraula
+...      vegades: 3
+...      temperature: 0.8
+... 
+...      1. Algorisme
+...      2. Microprocessador
+...      3. Recursivitat
+...      ```
+... 
+...    - Demaneu-li que respongui **només amb el codi complet, en un sol bloc i sense explicacions**, perquè sigui fàcil de copiar.
+... 
+...    *Pista:* el model no coneix bé la llibreria d'Ollama. Digueu-li que ha de fer servir `ollama.generate(model=..., prompt=..., options={..
+... .})`, que **tots els paràmetres del model** (ara `temperature`; més endavant `seed`, `top_k`, `top_p`, `num_predict`...) han d'anar dins de
+... l diccionari `options` i no com a arguments directes de `generate`, i que el text de la resposta és a `r["response"]`. Remarqueu-li que `ge
+... nerate` **no retorna el text directament**, sinó un objecte amb diversos camps, i que cal agafar-ne només el camp `response` abans de netej
+... ar-lo i imprimir-lo.
+
 ## Preguntes
 
 1. Quants intents us han calgut? Quins errors ha comès el model (nom del model, paràmetres, lectura dels arguments...) i com els heu resolt?
 
-   **Resposta:**
+   **Resposta:**Sorprenentment no ha fet falta més de un intent, a la primera ja ha creat el programa sense cap error.
 
 2. Heu llegit el codi abans d'executar-lo? Per què és important entendre el que s'executa a l'ordinador, encara que l'hagi escrit un model?
 
-   **Resposta:**
+   **Resposta:**Si, es important entendre el que exacuta l'ordinador per evitar problemes amb el codi, o que executi algo que no volguem, ja que aixo podria portar-nos molts problemes. el millor es revisar per evitar-nos espants més endevant
 
