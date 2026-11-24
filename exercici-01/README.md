@@ -27,9 +27,9 @@
 
 | Temperatura | Resposta 1 | Resposta 2 | Resposta 3 |
 | :- | :- | :- | :- |
-| 0 | | | |
-| 0.8 | | | |
-| 1.5 | | | |
+| 0 | Estratègia | Estratègia | Estratègia |
+| 0.8 | Imaginari | Abastament | Excepcionalitat |
+| 1.5 | Imaginació | Aniversari | Dedicatòria |
 
 ## Segona prova: una pregunta amb una sola resposta
 
@@ -43,24 +43,24 @@
 
 | Temperatura | Resposta 1 | Resposta 2 | Resposta 3 |
 | :- | :- | :- | :- |
-| 0 | | | |
-| 1.5 | | | |
+| 0 | París | París | París |
+| 1.5 | París | París | París |
 
 ## Preguntes
 
 1. Mireu la taula 1. Les tres respostes amb temperatura 0 són iguals? Per què? Compteu les lletres de la paraula: en té més de 10? Que sempre surti la mateixa paraula vol dir que sigui correcta?
 
-   **Resposta:**
+   **Resposta:** Si, les tres respostes son iguals. Les 3 paraules a temperatura 0 tenen 10 caracters, no més, per tant per molt que dongui la mateixa resposta no sera correcta
 
 2. Què passa quan pugeu la temperatura? Surten paraules diferents? N'hi ha alguna que no tingui més de 10 lletres o que no sembli una paraula real?
 
-   **Resposta:**
+   **Resposta:** Quan és puja la temperatura les paraules comencen a cambiar. Tot i aixó ho ha varies paraules que no tenen més de 10 caracters, peró totes tenen 10 segur o més. També totes les paraules semblen reals.
 
 3. Mireu la taula 2. Les respostes sobre la capital canvien tant com les de la paraula quan puja la temperatura? Per què creieu que la temperatura hi té tan poc efecte? (Pista: quantes respostes correctes té cada pregunta? La temperatura només dona varietat quan el model dubta entre diverses opcions.)
 
-   **Resposta:**
+   **Resposta:**No canvien, crec que la temperatura no te efecte perque aquesta pregunta nomes té una sola resposta correcta, i per tant la temperatura no pot variar les respostes correctes
 
 4. Amb les vostres paraules: què fa el paràmetre `temperature`?
 
-   **Resposta:**
+   **Resposta:**El parametre temperatura, el que fa es veure quan s'atreveix a arriscar al moment de donar una resposta
 
