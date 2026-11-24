@@ -42,5 +42,5 @@
 per a un generador d'idees per a un eslògan?
 3. Amb temperatura 0, el model ha donat sempre la mateixa resposta al prompt A? Era correcta? Que una resposta sigui consistent vol dir que sigui correcta? Com resoldríeu aquest problema en una aplicació real?
 
-   **Resposta:**Sempre a donat la mateixa resposta, i era incorrecta, aixo no la fa verdadera. Per solucionar-ho hauriem de verificar nosaltres el resultar, o tenir un proces automatic que compari la resposta donada amb la real
+   **Resposta:**Sempre a donat la mateixa resposta, i era incorrecta, aixo no la fa verdadera. Per solucionar-ho hauriem de verificar nosaltres el resultar, o tenir un proces automatic que compari la resposta donada amb la real.
 
